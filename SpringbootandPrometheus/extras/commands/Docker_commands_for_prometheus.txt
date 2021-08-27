@@ -1,0 +1,16 @@
+-- command to run prometheus on docker
+docker run -d -p 9092:9090 -v <path-to-your-prometheus.yml>:/etc/prometheus --name my-prometheus prom/prometheus:latest
+
+note - make sure to replace the <path-to-your-prometheus.yml> with the folder path where you have placed the prometheus.yml configuration file
+
+- sample command (prometheus_config folder here contains the 'prometheus.yml' file) - 
+docker run -d -p 9092:9090 -v C:\Users\Someuser\Downloads\prometheus_config:/etc/prometheus --name my-prometheus prom/prometheus:latest
+
+-- command to check if the prometheus docker container is started successfully or not
+docker ps -a
+
+-- command to stop the prometheus docker container
+docker stop my-prometheus
+
+-- command to remove the prometheus docker container
+docker rm my-prometheus

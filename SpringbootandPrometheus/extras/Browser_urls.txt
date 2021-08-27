@@ -1,0 +1,11 @@
+## Index controller endpoint -
+http://localhost:10095/api/welcome
+
+## Actuator endpoint - 
+http://localhost:9091/actuator
+
+## Prometheus endpoint -
+http://localhost:9091/actuator/prometheus
+
+## Prometheus url (running on the docker container) -
+http://localhost:9092
